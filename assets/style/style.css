@@ -1,0 +1,109 @@
+:root {
+  --mint-green: #85eba2;
+  --off-white: #f2f2f2;
+  --light-gray: #bababa;
+  --gray-green: #69bd7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gray-green);
+}
+
+header {
+  background-color: var(--light-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  z-index: 5;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 42px;
+  color: var(--gray-green);
+  margin: 0;
+  text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.7);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--mint-green);
+}
+
+header span {
+  color: var(--gray-green);
+  font-weight: bold;
+}
+
+header nav {
+  margin: 15px 0;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  padding: 10px 50px;
+  font-weight: bolder;
+  font-size: 1.95vw;
+}
+
+section {
+  padding: 40px;
+}
+
+.hero {
+  background-image: url("../images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+/*# sourceMappingURL=style.css.map */
