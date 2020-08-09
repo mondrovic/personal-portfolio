@@ -139,6 +139,7 @@ section {
 .section-content {
   padding-left: 40px;
   border-left: 3px solid var(--mint-green);
+  width: 100%;
 }
 
 .showcase-grid-wrapper {
@@ -149,10 +150,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (12.5%)[8];
-      grid-template-columns: repeat(8, 12.5%);
-  -ms-grid-rows: (12.5%)[8];
-      grid-template-rows: repeat(8, 12.5%);
 }
 
 .showcase-grid-container {
@@ -160,8 +157,12 @@ section {
   display: -ms-grid;
   display: grid;
   border: 2px solid var(--mint-green);
+  width: 90%;
   font-size: 1.2rem;
-  height: 600px;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 
 .showcase-grid-item {
@@ -177,15 +178,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-}
-
-.showcase-grid-item.main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / span 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / span 3;
 }
 
 .contact-links {
